@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Navbar from '@/components/Navbar';
 import ImageGallery from '@/components/ImageGallery';
-import Footer from '@/components/Footer';
+import JoinMovement from '@/components/JoinMovement';
+// import Footer from '@/components/Footer';
+// import JoinMovement from '@/components/JoinMovement';
+// import Gallery from '@/components/Gallery';
 
 export default function Home() {
   return (
@@ -63,11 +66,15 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Add ImageGallery component */}
-      <ImageGallery />
+      <JoinMovement />
       
+      <section className="py-12">
+        {/* <h2 className="text-center text-[#E31837] text-3xl font-bold mb-8">Gallery</h2> */}
+        <ImageGallery />
+      </section>
+
       {/* Add Footer component */}
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }

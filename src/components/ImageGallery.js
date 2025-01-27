@@ -6,7 +6,6 @@ import { useState, useEffect } from 'react';
 const GallerySection = styled.section`
   padding: 4rem 2rem;
   background-color: white;
-  color: #e31837;
 `;
 
 const GalleryTitle = styled.h2`
@@ -108,32 +107,37 @@ export default function ImageGallery() {
 
   return (
     <GallerySection>
-      <GalleryTitle>Gallery</GalleryTitle>
-      <GalleryGrid>
-        {images.map((image, index) => (
-          <ImageContainer key={index} onClick={() => setSelectedImage(image)}>
-            <Image
-              src={image}
-              alt={`Gallery image ${index + 1}`}
-              fill
-              style={{ objectFit: 'cover' }}
-            />
-          </ImageContainer>
-        ))}
-      </GalleryGrid>
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-center text-[#E31837] text-3xl md:text-4xl font-bold mb-4 md:mb-8">
+          Gallery
+        </h2>
 
-      {selectedImage && (
-        <Modal onClick={() => setSelectedImage(null)}>
-          <CloseButton onClick={() => setSelectedImage(null)}>×</CloseButton>
-          <Image
-            src={selectedImage}
-            alt="Selected image"
-            fill
-            className="modal-image"
-            style={{ objectFit: 'contain' }}
-          />
-        </Modal>
-      )}
+        <GalleryGrid>
+          {images.map((image, index) => (
+            <ImageContainer key={index} onClick={() => setSelectedImage(image)}>
+              <Image
+                src={image}
+                alt={`Gallery image ${index + 1}`}
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </ImageContainer>
+          ))}
+        </GalleryGrid>
+
+        {selectedImage && (
+          <Modal onClick={() => setSelectedImage(null)}>
+            <CloseButton onClick={() => setSelectedImage(null)}>×</CloseButton>
+            <Image
+              src={selectedImage}
+              alt="Selected image"
+              fill
+              className="modal-image"
+              style={{ objectFit: 'contain' }}
+            />
+          </Modal>
+        )}
+      </div>
     </GallerySection>
   );
 } 

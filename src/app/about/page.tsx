@@ -3,8 +3,8 @@ import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 
 export default function About() {
-  const [isRunningOpen, setIsRunningOpen] = useState(false);
-  const [isBioOpen, setIsBioOpen] = useState(false);
+  const [isRunningOpen, setIsRunningOpen] = useState(true);
+  const [isBioOpen, setIsBioOpen] = useState(true);
 
   return (
     <main className="min-h-screen flex flex-col">
