@@ -23,7 +23,6 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start space-y-2">
             <Link href="/" className="text-gray-900 md:text-gray-600 hover:text-[#E31837]">Home</Link>
             <Link href="/about" className="text-gray-900 md:text-gray-600 hover:text-[#E31837]">About</Link>
-            <Link href="/donate" className="text-gray-900 md:text-gray-600 hover:text-[#E31837]">Donate</Link>
           </div>
 
           {/* Social Links */}

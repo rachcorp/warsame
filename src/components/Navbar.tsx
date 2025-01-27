@@ -23,7 +23,7 @@ const Navbar = () => {
           <div className="flex space-x-6 mt-4">
             <Link href="/" className="text-white text-lg hover:text-gray-200">Home</Link>
             <Link href="/about" className="text-white text-lg hover:text-gray-200">About</Link>
-            <Link href="/donate" className="text-white text-lg hover:text-gray-200">Donate</Link>
+            {/* <Link href="/donate" className="text-white text-lg hover:text-gray-200">Donate</Link> */}
           </div>
         </div>
 
@@ -48,7 +48,7 @@ const Navbar = () => {
           <div className="flex space-x-8">
             <Link href="/" className="text-white text-xl hover:text-gray-200">Home</Link>
             <Link href="/about" className="text-white text-xl hover:text-gray-200">About</Link>
-            <Link href="/donate" className="text-white text-xl hover:text-gray-200">Donate</Link>
+            {/* <Link href="/donate" className="text-white text-xl hover:text-gray-200">Donate</Link> */}
           </div>
         </div>
       </div>
