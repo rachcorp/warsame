@@ -33,7 +33,7 @@ export default function Donate() {
                 To support our campaign, please send your donation via Interac e-Transfer to:
               </p>
               <p className="font-mono text-xl bg-gray-50 p-4 rounded-lg text-center">
-                wwarsamej@hotmail.com
+                warsame@votewarsame.ca
               </p>
             </div>
 
