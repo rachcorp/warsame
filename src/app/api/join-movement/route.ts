@@ -93,13 +93,13 @@ export async function POST(request: Request) {
 
     } catch (error) {
       console.error('Form submission error:', {
-        message: error.message,
-        stack: error.stack
+        message: error instanceof Error ? error.message : 'Unknown error',
+        stack: error instanceof Error ? error.stack : undefined
       });
       return NextResponse.json(
         { 
           error: 'Failed to submit form',
-          details: error.message,
+          details: error instanceof Error ? error.message : 'Unknown error',
           timestamp: new Date().toISOString()
         },
         { status: 500 }
@@ -108,13 +108,13 @@ export async function POST(request: Request) {
 
   } catch (error) {
     console.error('Request processing error:', {
-      message: error.message,
-      stack: error.stack
+      message: error instanceof Error ? error.message : 'Unknown error',
+      stack: error instanceof Error ? error.stack : undefined
     });
     return NextResponse.json(
       { 
         error: 'Failed to process request',
-        details: error.message,
+        details: error instanceof Error ? error.message : 'Unknown error',
         timestamp: new Date().toISOString()
       },
       { status: 500 }
