@@ -5,9 +5,9 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="flex-1 grid grid-cols-2">
+      <div className="flex-1 grid grid-cols-1 md:grid-cols-2">
         {/* Left side - Image */}
-        <div className="relative w-full min-h-[calc(100vh-88px)]">
+        <div className="relative w-full min-h-[50vh] md:min-h-[calc(100vh-88px)]">
           <Image
             src="/images/warsame-sit.jpeg"
             alt="Warsame profile image"
@@ -18,14 +18,14 @@ export default function Home() {
         </div>
         
         {/* Right side - Red background with content */}
-        <div className="bg-[#E31837] flex flex-col justify-center items-center text-center px-16">
-          <h1 className="text-6xl font-bold text-white mb-6">
+        <div className="bg-[#E31837] flex flex-col justify-center items-center text-center px-4 md:px-16 py-12 md:py-0">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6">
             Warsame J Warsame
           </h1>
-          <h2 className="text-3xl text-white mb-12">
+          <h2 className="text-xl md:text-3xl text-white mb-8 md:mb-12">
             Seeking Ontario Liberal nomination for Ottawa West-Nepean
           </h2>
-          <div className="mb-12 w-[300px]"> {/* Adjust width as needed */}
+          <div className="mb-8 md:mb-12 w-[200px] md:w-[300px]">
             <Image
               src="/images/olp-white.svg"
               alt="Liberal Logo"
