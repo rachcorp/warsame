@@ -110,7 +110,7 @@ export default function About() {
                 <p className="text-base leading-relaxed">
                   Warsame&apos;s work with the United Nations Migration Agency and his extensive experience in refugee protection have made him a steadfast advocate for human rights and education. Whether through supporting students, assisting refugees, or advancing programs that promote opportunity, Warsame has consistently championed those most in need.
                 </p> 
-                <br />
+                
 
                 <p className="text-base leading-relaxed">
                   A graduate of the University of Guelph, Warsame has a strong academic foundation in agricultural economics, coupled with a deep understanding of rural Ontario. His expertise is vital for fostering innovation, supporting local farmers, and driving sustainable growth in agribusiness and rural communities across the province.
