@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Warsame J Warsame - Liberal Nomination Ottawa West-Nepean",
-  description: "Warsame J Warsame for Ottawa West-Nepean Liberal Nomination",
+  title: "Warsame J Warsame - Ontario Liberal Nomination Ottawa West-Nepean",
+  description: "Warsame J Warsame for Ottawa West-Nepean Ontario Liberal Nomination",
   openGraph: {
-    title: "Warsame J Warsame - Liberal Nomination Ottawa West-Nepean",
+    title: "Warsame J Warsame - Ontario Liberal Nomination Ottawa West-Nepean",
     description: "Join us in building a stronger Ottawa West-Nepean community",
     url: "https://votewarsame.ca",
     siteName: "Warsame J Warsame Campaign",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: "/images/warsamecasual.jpeg",  // You'll need to add this image to your public folder
         width: 1200,
         height: 630,
-        alt: "Warsame J Warsame Campaign"
+        alt: "Warsame J Warsame Ontario Liberal Campaign"
       }
     ]
   }

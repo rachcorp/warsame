@@ -9,14 +9,14 @@ const Navbar = () => {
           <Link href="/" className="flex items-center">
             <Image
               src="/images/olp-white.svg"
-              alt="Liberal Logo"
+              alt="Ontario Liberal Logo"
               width={150}
               height={40}
               priority
             />
           </Link>
           <span className="text-white text-xl">
-            Seeking Nomination for Ottawa West-Nepean
+            Seeking Ontario Liberal Nomination for Ottawa West-Nepean
           </span>
         </div>
         

@@ -23,7 +23,7 @@ export default function Home() {
             Warsame J Warsame
           </h1>
           <h2 className="text-3xl text-white mb-12">
-            Seeking nomination for Ottawa West-Nepean
+            Seeking Ontario Liberal nomination for Ottawa West-Nepean
           </h2>
           <div className="mb-12 w-[300px]"> {/* Adjust width as needed */}
             <Image
