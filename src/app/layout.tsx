@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import JoinMovement from '@/components/JoinMovement';
 // import Footer from '../components/Footer';
 
 const geistSans = Geist({
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/warsamecasual.jpeg",  // You'll need to add this image to your public folder
+        url: "/images/warsamecasual.jpeg", 
         width: 1200,
         height: 630,
         alt: "Warsame J Warsame Ontario Liberal Campaign"
@@ -45,6 +46,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <JoinMovement />
         {/* <Footer /> */}
       </body>
     </html>
