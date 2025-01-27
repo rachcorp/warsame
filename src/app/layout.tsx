@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Warsame J Warsame - Liberal Nomination Ottawa West-Nepean",
   description: "Warsame J Warsame for Ottawa West-Nepean Liberal Nomination",
+  icons: {
+    icon: null
+  }
 };
 
 export default function RootLayout({
