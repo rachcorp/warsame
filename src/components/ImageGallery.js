@@ -8,12 +8,12 @@ const GallerySection = styled.section`
   background-color: white;
 `;
 
-const GalleryTitle = styled.h2`
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  letter-spacing: 0.1em;
-`;
+// const GalleryTitle = styled.h2`
+//   text-align: center;
+//   margin-bottom: 2rem;
+//   font-size: 2rem;
+//   letter-spacing: 0.1em;
+// `;
 
 const GalleryGrid = styled.div`
   display: grid;
